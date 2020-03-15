@@ -1,0 +1,47 @@
+{
+  "id": "332e86da-3db5-4fdf-973f-6dcb0415fbea",
+  "version": "2.0",
+  "name": "Lesson_1_Selenium_IDE",
+  "url": "https://ya.ru",
+  "tests": [{
+    "id": "1c6516ad-c9b5-4e96-8174-8f94b987c529",
+    "name": "Test_1",
+    "commands": [{
+      "id": "6d05bc2f-c628-4203-a199-65b7f49b1932",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b380ec5-d09c-4e64-830d-0f712e0b0f3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1076x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "419f3062-bc89-436a-a736-416b4cc8d596",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5dbf83da-8bc1-4aa2-86dd-df8a2bccfff6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1c6516ad-c9b5-4e96-8174-8f94b987c529"]
+  }],
+  "urls": ["https://ya.ru/"],
+  "plugins": []
+}
